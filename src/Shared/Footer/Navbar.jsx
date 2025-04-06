@@ -1,15 +1,12 @@
 import React from 'react';
 const navOptions = <>
     <li><a>Item 1</a></li>
-    <li>
-       
-    </li>
     <li><a>Item 3</a></li>
 </>
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className=" navbar fixed z-10 bg-base-100 bg-opacity-30 bg-black text-white max-w-screen-xl ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -17,7 +14,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        className=" dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
                         {navOptions}
 
                     </ul>
